@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.grid-container {
+    position:relative;
+    top: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 2fr;
+    grid-template-rows: 140px auto 140px;
+}
+
+.kiwi_image {
+    display: inline-block;
+    margin: 0px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.header {
+    grid: span 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background-color: #8B8C64;
+    margin: 0px;
+    padding: 10px; 
+    
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    font-size: 85px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.search {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    background-color: #894E30;
+    padding: 10px;
+}
+
+.divider {
+    border-bottom: 3px solid #BF9774;
+    border-radius: 1.5px;
+}
+
+.main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 20px;
+
+    background-color: #B3723C;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    grid: span 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    background-color: #8B8C64;
+    margin: 0px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.bird_card {
+    position: relative;
+    border: 1px solid black;
+    background-color: #BF9774;
+    border-radius: 10px;
+    height: 875px;
+    width: 500px;
+}
+
+.bird_card:hover {
+    transform-origin: left top;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.bird_img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+.bird_img:hover {
+    transform: scale(1.27);
+    transform-origin: center top;
+    z-index: 1000;
+}
+
+.two_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.p_photo {
+    font-weight: normal;
+    color: white; 
+    margin: 0px;
+}
+
+.p_orig_name {
+    font-weight: bold; 
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    height: 29px;
+}
+
+.bird_status {
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    margin: 0px;
+}
+
+.conservation_grid {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: auto;
+    padding: 5px;
+    width: 360px;
+    grid-gap: 10px;
+}
+
+#bird_text {
+    font-family: "Montserrat", sans-serif;    
+    font-size: medium;
+    width: 355px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#filter_status {
+    font-family: "Montserrat", sans-serif;    
+    font-size: medium;
+    width: 380px;
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#filter_sort {
+    font-family: "Montserrat", sans-serif;    
+    font-size: medium;
+    width: 380px;
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#filter_button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    width: 380px;
+    border: 2px solid black;
+    border-style: inset;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #BF9774;
+}
+
+.bird_grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 480px;
+    
+}
+
+.status {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    transform: rotate(45deg);
+    margin:3px; 
+    border: 1px solid black;
+}
+
+.p_main {
+    font-weight: normal;
+    margin: 3px;
+}
+
+.p_main_bold {
+    font-weight: bold;
+    margin: 3px;
+}
+
+.p_filter {
+    font-weight: bold;
+    font-size: larger;
+    margin: 3px;
+}
+
+.p_heading {
+    font-weight: bold; 
+    font-size: x-large;
+    text-align: center;
+    margin: 12px;
+    margin-top: 24px;
+}
+
+

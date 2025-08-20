@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Birds of Aotearoa
+        </title>
+        <link href="./style.css" rel="stylesheet">
+        <script defer src="fetch_data.js"></script>
+        <link rel="icon" href="kiwi.png" type="image/x-icon">
+    </head>
+
+    
+
+    <body>
+        <div class="grid-container">
+
+            <div class="header">
+                <h1><img class="kiwi_image" src="kiwi.png" alt=""> Birds of Aotearoa
+                </h1>
+            </div>
+
+            <div class="search">
+                <p class="p_heading">Filter Birds</p>
+                
+                <form id="bird_search">
+                    <label class="p_filter" for="bird_text">Search:</label><br>
+                    <input type="text" id="bird_text" name="bird_text" placeholder="Enter here..."><br><br>
+
+                    <p class="p_filter">Filter By:</p><br>
+
+                    <label class="p_main_bold" for="filter_status">Conservation Status:</label><br>
+                    <select id="filter_status" name="filter_status" required="">
+                        <option disabled="" selected="" value="">Select an option...</option>
+                        <option value="All">All</option>
+                        <option value="Not Threatened">Not Threatened</option>
+                        <option value="Naturally Uncommon">Naturally Uncommon</option>
+                        <option value="Relict">Relict</option>
+                        <option value="Recovering">Recovering</option>
+                        <option value="Declining">Declining</option>
+                        <option value="Nationally Increasing">Nationally Increasing</option>
+                        <option value="Nationally Vulnerable">Nationally Vulnerable</option>
+                        <option value="Nationally Endagered">Nationally Endangered</option>
+                        <option value="Nationally Critical">Nationally Critical</option>
+                        <option value="Extinct">Extinct</option>
+                        <option value="Data Deficient">Data Deficient</option>
+                    </select><br><br>
+
+                    <label class="p_main_bold" for="bird_text">Order By:</label><br>
+                    <select id="filter_sort" name="filter_sort" required="">
+                        <option disabled="" selected="" value="">Select an option...</option>
+                        <option value="alpha">Alphabetically</option>
+                        <option value="lighest_heaviest">Lightest to Heaviest</option>
+                        <option value="shortest_longest">Shortest to Longest</option>
+                    </select>
+                    <button id="filter_button" type="button">Filter Results</button>
+                    <p class="p_main" id="filter_results"></p>
+                </form>
+
+
+                
+
+                <hr class="divider">
+
+                <p class="p_heading">Conservation Status </p>
+                
+                <div class="conservation_grid">
+                    <p class="status" style="background-color: #02a028;"></p>
+                    <p class="p_main">Not Threatened</p>
+                    <p class="status" style="background-color: #649a31;"></p>
+                    <p class="p_main">Naturally Uncommon</p>
+                    <p class="status" style="background-color: #99cb68;"></p>
+                    <p class="p_main">Relict</p>
+                    <p class="status" style="background-color: #fecc33;"></p>
+                    <p class="p_main">Recovering</p>
+                    <p class="status" style="background-color: #fe9a01;"></p>
+                    <p class="p_main">Declining</p>
+                    <p class="status" style="background-color: #c26967;"></p>
+                    <p class="p_main">Nationally Increasing</p>
+                    <p class="status" style="background-color: #9b0000;"></p>
+                    <p class="p_main">Nationally Vulnerable</p>
+                    <p class="status" style="background-color: #660032;"></p>
+                    <p class="p_main">Nationally Endangered</p>
+                    <p class="status" style="background-color: #320033;"></p>
+                    <p class="p_main">Nationally Critical</p>
+                    <p class="status" style="background-color: black"></p>
+                    <p class="p_main">Extinct</p>
+                    <p class="status" style="background-color: black"></p>
+                    <p class="p_main">Data Deficient</p>
+                </div><br>
+                
+                <p class="p_main">Conservation status from <a href="https://www.doc.govt.nz/nature/conservation-status/">DOC Website</a></p>
+            </div>
+            
+            <div class="main"></div>
+            
+            <div class="footer">
+                <p class="p_footer">Data licensed from the Ornithological Society of New Zealand (<a href="https://www.birdsnz.org.nz/">Birds NZ</a>) in collaboration with The National Museum of NZ (Te Papa) and the Department of Conservation (DOC) for use within the University of Otago.</p>
+        
+                <p class="p_footer">Kiwi Logo Source: <a href="https://www.flaticon.com/free-icons/kiwi" title="kiwi icons">Kiwi icons created by Freepik - Flaticon</a></p>
+            </div>
+        </div>
+    </body>
+</html>
