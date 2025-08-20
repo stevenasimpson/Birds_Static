@@ -1,11 +1,12 @@
-# COSC203 - Assignment 1
+# Birds - Static Data
 
 ## Author
 <p> Steven Simpson </p>
 <p>ID: 2308317</p>
 
 ## Description
-This project houses the neccesary data and source files to form a complete webpage hosted on GitLab (Otago). 
+This project houses the neccesary data and source files to form a complete webpage which can be locally hosted.   
+A convenient method for viewing this is to use Visual Studio Code's Live Server extension. 
 
 The content of this webpage is a collection of New Zealand birds with various scientific data and images.
 
