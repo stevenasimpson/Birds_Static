@@ -1,8 +1,7 @@
 # Birds - Static Data
 
 ## Author
-<p> Steven Simpson </p>
-<p>ID: 2308317</p>
+Steven Simpson
 
 ## Description
 This project houses the neccesary data and source files to form a complete webpage which can be locally hosted.   
